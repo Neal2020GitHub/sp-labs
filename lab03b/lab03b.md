@@ -240,15 +240,7 @@ rm __re.txt
 exit 0  # 脚本成功退出
 ```
 
-## 3. 思考题
-
-- 简述shell脚本中三个有特殊作用的字符。
-- Shell脚本的变量有哪几类，各是什么情况下使用？
-- Shell脚本分支语句有几类，各是什么情况下使用？
-- Shell脚本循环语句有几类，各是什么情况下使用？
-- 简述shell脚本的调试方法。
-
-## 4. 实验习题
+## 3. 实验习题
 
 - 假如在脚本的第一行放入`#!/bin/rm`或者在普通文本文件中第一行放置`#!/bin/more`，然后将文件设为可执行权限执行，看看会发生什么，并解释为什么。
 - 编写一个 bash 脚本，执行该脚本文件将得到两行输出，第一行是你的学号，第二行是当前的日期（考虑使用`date`命令）。对该脚本文件的要求是
@@ -256,8 +248,8 @@ exit 0  # 脚本成功退出
   - 用户可以在任意位置**只需要输入文件名**就可以执行该脚本文件
   - **不破坏除用户家目录之外的任何目录结构**，即不要在家目录之外的任何地方增删改任何文件
     **请详细叙述你的操作过程以及操作过程的截图，并给出你所编写的脚本文件的代码。**
-- 完成[LeetCode: 193. Valid Phone Numbers](https://leetcode-cn.com/problems/valid-phone-numbers/)，给出你的代码和 AC 截图。(体会`grep -E`, `grep -P`, `egrep`, `awk`等的差异)
-- 完成[LeetCode: 195. Tenth Line](https://leetcode.com/problems/valid-phone-numbers/)，给出你的代码和 AC 截图。(提示：[怎么读取每一行](http://blog.sina.com.cn/s/blog_605f5b4f0101b0sd.html))
+- 完成[LeetCode: 193. Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/) | [leetcode-cn](https://leetcode-cn.com/problems/valid-phone-numbers/) (体会`grep -E`, `grep -P`, `egrep`, `awk`等的差异)
+- 完成[LeetCode: 195. Tenth Line](https://leetcode.com/problems/tenth-line/) | [leetcode-cn](https://leetcode-cn.com/problems/tenth-line/)，给出你的代码和 AC 截图。(提示：[怎么读取每一行](http://blog.sina.com.cn/s/blog_605f5b4f0101b0sd.html))
 - 完成一个简单的交互设计，根据用户输入输出对应内容，具体交互内容随意，要求至少用上`select`，`case`和`read`。
 - 编写 Shell 脚本`addowner.sh`将某目录下面所有的文件名后面加上文件所有者的名字。比如`a.txt`和`file`的所有者都为 owner，文件名修改后分别为`a[owner].txt`和`file[owner]`。
   - 使用用法：`./addowner 目录名称`。（若无目录名称这一参数，则默认为当前目录）
